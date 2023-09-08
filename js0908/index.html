@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <label for="Adatmennyiség">Adatmennyiség</label>
+        <input type="text" name="meretBekeres" id="ID-meretbekeres">
+        <select id="meretValasztas" name="elsoValasztos">
+            <option value="KB" id="kbID">KB</option>
+            <option value="MB" id="mbID">MB</option>
+            <option value="GB" id="gbID">GB</option>
+        </select>
+        <br> <br>
+        
+        <label for="Átviteli sebesség">Átviteli sebesség</label>
+        <input type="range" name="csuszka" id="ID-csuszkazodasi" min="10" max="5000" value="2600" onchange="CsuszkaSzia()">
+        <label for="csuszkaErtek" id="ID-csuszkaerteke">?</label>
+        <select id="meretValasztas" name="masodikValasztos">
+            <option value="Kbps">Kbps</option>
+            <option value="Mbps">Mbps</option>
+            <option value="Gbps">Gbps</option>
+        </select> <br> <br>
+        <label for="szeva">Átviteli idő: </label>
+        <label for="eredmeny" id="ID-eredmeny"></label>
+        <input type="button" value="Kiszámít" onclick="kattintas()">
+    </form>
+</body>
+</html>
